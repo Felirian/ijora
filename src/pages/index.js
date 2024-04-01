@@ -6,11 +6,12 @@ import Filters from "../widgets/Filters";
 import Contact from "../widgets/Contact";
 import Map from '../widgets/Map'
 import About from "../widgets/About";
+import styled from "styled-components";
 const Index = () => {
   //const {data, error, loading} = useQuery(GET_ITEMS)
 
   return (
-    <>
+    <Wrapper>
       <Head>
         <title>IJORA</title>
       </Head>
@@ -23,8 +24,14 @@ const Index = () => {
       <Map/>
 
       <Footer/>
-    </>
+
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  width: 100%;
+  padding: 0 8% ;
+`
 
 export default Index;
