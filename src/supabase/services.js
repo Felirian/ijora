@@ -1,4 +1,4 @@
-import {ApolloClient, InMemoryCache} from "@apollo/client";
+import {ApolloClient, gql, InMemoryCache} from "@apollo/client";
 import {createClient} from "@supabase/supabase-js";
 
 const supabase_key = process.env.NEXT_PUBLIC_DB_SERVICE_KEY
@@ -16,3 +16,21 @@ export const client = new ApolloClient({
   cache: new InMemoryCache(),
   ssrMode: false,
 })
+
+export const GET_APARTMENTS = gql`
+query {  
+  apartmentCollection {
+    edges {
+      node {
+        id
+        Rooms
+        Cost
+        Square
+        Floor
+        apartNumber
+        Entrance
+      }
+    }
+  }
+}
+`;
