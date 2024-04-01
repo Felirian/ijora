@@ -5,6 +5,7 @@ import Header from "../widgets/Header";
 import Filters from "../widgets/Filters";
 import Contact from "../widgets/Contact";
 import Map from '../widgets/Map'
+import About from "../widgets/About";
 const Index = () => {
   //const {data, error, loading} = useQuery(GET_ITEMS)
 
@@ -16,7 +17,7 @@ const Index = () => {
 
       <Header/>
 
-
+      <About/>
       <Filters/>
       <Contact/>
       <Map/>
