@@ -58,6 +58,7 @@ const Filters = () => {
           max={100}
         />
       </div>
+
       <div style={{ margin: '20px 0' }}>
         <Typography id="rooms-select" gutterBottom>
           <H3>Количество комнат</H3>
