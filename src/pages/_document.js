@@ -47,19 +47,13 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Open+Sans:wght@300;400;600&display=swap"
             rel="stylesheet"/>
           {/*-----------------------------------------------иконки-----------------------------------------------*/}
-          {/*<meta name="msapplication-TileColor" content="#2b5797"/>*/}
-          {/*<meta name="theme-color" content="#000000"/>*/}
-          {/*<link*/}
-          {/*  rel="stylesheet"*/}
-          {/*  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"*/}
-          {/*/>*/}
-          {/*<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>*/}
-          {/*<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>*/}
-          {/*<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>*/}
-          {/*<link rel="manifest" href="/site.webmanifest"/>*/}
-          {/*<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d0d0d"/>*/}
-          {/*<meta name="msapplication-TileColor" content="#ff0000"/>*/}
-          {/*<meta name="theme-color" content="#ffffff"/>*/}
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+          <link rel="manifest" href="/site.webmanifest"/>
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+          <meta name="msapplication-TileColor" content="#da532c"/>
+          <meta name="theme-color" content="#ffffff"/>
         </Head>
 
         <body>
