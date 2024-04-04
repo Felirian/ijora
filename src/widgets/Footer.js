@@ -5,20 +5,20 @@ import { P, H1 } from '../app/TextTags';
 const Footer = () => {
   return (
     <FooterWr>
-      <DivHeaderContainerServices>
+      <DivFooterContainerServices>
       <a href="#"><P>О ЖК</P></a>
       <a href="#"><P>Услуги</P></a>
       <a href="#"><P>Подбор жилья</P></a>
       <a href="#"><P>Контакты</P></a>
-      </DivHeaderContainerServices>
+      </DivFooterContainerServices>
 
       <H1>IJORA</H1>
 
-      <DivHeaderContainerContacts>
+      <DivFooterContainerContacts>
         <P>Санкт-Петербург, ул.Большая Морская,18, Россия, 191186</P>
         <P>88121112233</P>
         <P>info@izhora.ru</P>
-      </DivHeaderContainerContacts>
+      </DivFooterContainerContacts>
     </FooterWr>
   );
 };
@@ -31,19 +31,19 @@ const FooterWr = styled.footer`
   justify-content: center;
   position: absolute;
   left:0;
-
 `
 
-const DivHeaderContainerServices = styled.div`
+const DivFooterContainerServices = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.11vw;
 `
-const DivHeaderContainerContacts = styled.div`
+const DivFooterContainerContacts = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.16vw;
   width: 21.82vw;
+  align-items: flex-end;
 `
 
 export default Footer;
