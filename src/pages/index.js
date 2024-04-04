@@ -7,6 +7,7 @@ import Contact from "../widgets/Contact";
 import Map from '../widgets/Map'
 import About from "../widgets/About";
 import styled from "styled-components";
+import Title from '../widgets/Title';
 const Index = () => {
 
 
@@ -17,7 +18,7 @@ const Index = () => {
       </Head>
 
       <Header/>
-
+      <Title/>
       <About/>
       <Filters/>
       <Contact/>

@@ -45,6 +45,7 @@ const DivHeaderContainerContacts = styled.div`
   flex-direction: column;
   gap: 2.16vw;
   width: 21.82vw;
+  align-items: flex-end;
 `
 
 export default Footer;
