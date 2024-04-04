@@ -1,6 +1,7 @@
 import React from 'react';
 import {P} from "../app/TextTags";
 import styled from "styled-components";
+import {BREAKPOINTS} from "../app/variables";
 
 const ApartCard = ({id, Rooms, Cost, Square, Floor, apartNumber, Entrance}) => {
   return (
@@ -12,7 +13,7 @@ const ApartCard = ({id, Rooms, Cost, Square, Floor, apartNumber, Entrance}) => {
         height={400}
         //style={{zIndex: 0}}
       />
-      <P>Комнат:{Rooms == 0 ? 'Студия' : Rooms}</P>
+      <P>{Rooms == 0 ? 'Студия' : `${Rooms} комнатная`}</P>
       <P>Стоимость: {Cost}</P>
       <P>Площадь: {Square}</P>
       <P>Этаж: {Floor}</P>
@@ -21,13 +22,16 @@ const ApartCard = ({id, Rooms, Cost, Square, Floor, apartNumber, Entrance}) => {
     </ApartCardWr>
   );
 };
-const ApartCardWr = styled.article`
+const ApartCardWr = styled.div`
   width: 22%;
   display: flex;
   flex-direction: column;
   padding: 1vw;
   background-color: #ece7e7;
   border-radius: 3vw;
+  @media ${BREAKPOINTS.mobile} {
+    width: 45%;
+  }
 `
 const Image = styled.img`
   width: 100%;

@@ -5,3 +5,11 @@ export const COLORS = {
   grey: '#3D3D3D'
 }
 
+export const sizes = {
+  mobileWidth: "720px",
+};
+
+export const BREAKPOINTS = {
+  mobile: `(max-width: ${sizes.mobileWidth})`,
+};
+

@@ -33,9 +33,9 @@ const Filters = () => {
   return (
     <>
       <div style={{ margin: '20px 0' }}>
-        <Typography id="price-range-slider" gutterBottom>
+
           <H3>Стоимость</H3>
-        </Typography>
+
         <Slider
           value={priceFilter}
           onChange={handlePriceChange}
@@ -46,9 +46,9 @@ const Filters = () => {
         />
       </div>
       <div style={{ margin: '20px 0' }}>
-        <Typography id="area-range-slider" gutterBottom>
+
           <H3>Площадь</H3>
-        </Typography>
+
         <Slider
           value={areaFilter}
           onChange={handleAreaChange}
@@ -60,15 +60,15 @@ const Filters = () => {
       </div>
 
       <div style={{ margin: '20px 0' }}>
-        <Typography id="rooms-select" gutterBottom>
+
           <H3>Количество комнат</H3>
-        </Typography>
+
         <Select
           multiple
           value={roomsFilter}
           onChange={handleRoomsChange}
           displayEmpty
-
+          defaultValue={1}
         >
           <MenuItem value={0}>Студия</MenuItem>
           <MenuItem value={1}>1</MenuItem>
