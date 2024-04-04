@@ -9,8 +9,6 @@ import img4 from '../assets/servicesImg4.png';
 
 import ServicesCard from "../shared/ServicesCard";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const SERVICES = [
   {
@@ -35,10 +33,7 @@ const SERVICES = [
   },
 ]
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+
 
   return (
     <Wr>
