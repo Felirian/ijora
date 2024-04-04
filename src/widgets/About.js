@@ -39,7 +39,7 @@ const About = () => {
     <Wr>
       <TextBlock id={'about'}>
         <H2 data-aos={"fade-right"}>О жилом<br/>комплексе</H2>
-        <P>
+        <P data-aos={"fade-left"}>
           Коттеджный поселок «Новая Ижора» расположен в Пушкинском районе Санкт-Петербурга, относящемуся
           к числу наиболее престижных и развивающихся районов города. «Новая Ижора» - это сообщество людей,
           объединенных одними ценностями - жизнь в собственном доме на своей земле, комфорт и безопасность детей,
@@ -49,18 +49,18 @@ const About = () => {
         </P>
       </TextBlock>
 
-      <H2 id={'serv'}>Наши услуги</H2>
+      <H2 id={'serv'} data-aos={"fade-right"}>Наши услуги</H2>
       <ServicesWr>
         {SERVICES.map((card, i)=> (
-          <ServicesCard key={`services_${i}`} name={card.name} text={card.text} img={card.img.src}/>
+          <ServicesCard  key={`services_${i}`} name={card.name} text={card.text} img={card.img.src}/>
         ))}
       </ServicesWr>
 
 
       <TextBlock>
-        <H2>Наши акции</H2>
+        <H2 data-aos={"fade-right"}>Наши акции</H2>
 
-        <ul>
+        <ul data-aos={"fade-left"}>
           <H4>
             Подробнее о действующих акциях
             вам расскажет наш консультант

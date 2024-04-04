@@ -5,9 +5,9 @@ import {BREAKPOINTS} from "../app/variables";
 
 const ServicesCard = ({img, name, text}) => {
   return (
-    <CardWr>
+    <CardWr data-aos="flip-down">
       <Image src={img} alt={name}/>
-      <TextWr>
+      <TextWr data-aos={"fade-right"}>
         <H4>{name}</H4>
         <P>{text}</P>
       </TextWr>
