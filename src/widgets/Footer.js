@@ -4,12 +4,12 @@ import { P, H1 } from '../app/TextTags';
 
 const Footer = () => {
   return (
-    <FooterWr>
+    <FooterWr id={'footer'}>
       <DivHeaderContainerServices>
-      <a href="#"><P>О ЖК</P></a>
-      <a href="#"><P>Услуги</P></a>
-      <a href="#"><P>Подбор жилья</P></a>
-      <a href="#"><P>Контакты</P></a>
+        <a href="#about"><P>О ЖК</P></a>
+        <a href="#serv"><P>Услуги</P></a>
+        <a href="#filters"><P>Подбор жилья</P></a>
+        <a href="#footer"><P>Контакты</P></a>
       </DivHeaderContainerServices>
 
       <H1>IJORA</H1>
@@ -31,6 +31,7 @@ const FooterWr = styled.footer`
   justify-content: center;
   position: absolute;
   left:0;
+  margin-top: 10vw;
 
 `
 

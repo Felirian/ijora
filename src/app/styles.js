@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
-    scroll-padding: 0;
+    scroll-padding: 8vw;
   }
 
   body {
@@ -37,5 +37,9 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 `

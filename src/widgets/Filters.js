@@ -86,7 +86,7 @@ const Filters = () => {
           <H2>Error</H2>
         </>
       ) : (
-        <ApartWr>
+        <ApartWr id={'filters'}>
           {data?.apartmentCollection.edges
             .filter(apart => parseInt(apart.node.Cost) >= priceFilter[0] && parseInt(apart.node.Cost) <= priceFilter[1])
             .filter(apart => parseInt(apart.node.Square) >= areaFilter[0] && parseInt(apart.node.Square) <= areaFilter[1])

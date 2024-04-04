@@ -33,12 +33,15 @@ const TextWr = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
-  h4 {
-    font-size: 5vw;
+  @media ${BREAKPOINTS.mobile} {
+    h4 {
+      font-size: 5vw;
+    }
+    p {
+      font-size: 3vw;
+    }
   }
-  p {
-    font-size: 3vw;
-  }
+  
 `
 const Image = styled.img`
   width: 100%;

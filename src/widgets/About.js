@@ -34,7 +34,7 @@ const SERVICES = [
 const About = () => {
   return (
     <Wr>
-      <TextBlock>
+      <TextBlock id={'about'}>
         <H2>О жилом<br/>комплексе</H2>
         <P>
           Коттеджный поселок «Новая Ижора» расположен в Пушкинском районе Санкт-Петербурга, относящемуся
@@ -46,7 +46,7 @@ const About = () => {
         </P>
       </TextBlock>
 
-      <H2>Наши услуги</H2>
+      <H2 id={'serv'}>Наши услуги</H2>
       <ServicesWr>
         {SERVICES.map((card, i)=> (
           <ServicesCard key={`services_${i}`} name={card.name} text={card.text} img={card.img.src}/>
