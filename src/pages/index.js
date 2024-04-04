@@ -21,8 +21,7 @@ const Index = () => {
       <Title/>
       <About/>
       <Filters/>
-      <Contact/>
-      <Map/>
+
 
       <Footer/>
 
