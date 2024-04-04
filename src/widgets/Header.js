@@ -7,9 +7,9 @@ const Header = () => {
     <HeaderWr>
       <DivHeaderContainerServices>
       <a href="#"><P>О ЖК</P></a>
-        <P>Услуги</P>
-        <P>Подбор жилья</P>
-        <P>Контакты</P>
+      <a href="#"><P>Услуги</P></a>
+      <a href="#"><P>Подбор жилья</P></a>
+      <a href="#"><P>Контакты</P></a>
       </DivHeaderContainerServices>
       <H1>IJORA</H1>
       <DivHeaderContainerContacts>
