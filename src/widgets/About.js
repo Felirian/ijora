@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import {H2, H4, P} from "../app/TextTags";
 
@@ -8,6 +8,9 @@ import img3 from '../assets/servicesImg3.png';
 import img4 from '../assets/servicesImg4.png';
 
 import ServicesCard from "../shared/ServicesCard";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SERVICES = [
   {
@@ -32,10 +35,15 @@ const SERVICES = [
   },
 ]
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <Wr>
       <TextBlock id={'about'}>
-        <H2>О жилом<br/>комплексе</H2>
+        <H2 data-aos={"fade-right"}>О жилом<br/>комплексе</H2>
         <P>
           Коттеджный поселок «Новая Ижора» расположен в Пушкинском районе Санкт-Петербурга, относящемуся
           к числу наиболее престижных и развивающихся районов города. «Новая Ижора» - это сообщество людей,

@@ -8,7 +8,7 @@ import Map from '../widgets/Map'
 import About from "../widgets/About";
 import styled from "styled-components";
 const Index = () => {
-  //const {data, error, loading} = useQuery(GET_ITEMS)
+
 
   return (
     <Wrapper>

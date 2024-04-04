@@ -12,6 +12,7 @@ const ApartCard = ({id, Rooms, Cost, Square, Floor, apartNumber, Entrance}) => {
         width={400}
         height={400}
       />
+
       <RoomsWr>
         <P>{Rooms == 0 ? 'Студия' : `${Rooms} комнатная`}</P>
       </RoomsWr>
