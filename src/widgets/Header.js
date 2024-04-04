@@ -23,6 +23,7 @@ const Header = () => {
 const DivHeaderContainerServices = styled.div`
   display: flex;
   flex-direction: row;
+  
   gap: 1.11vw;
 `
 const DivHeaderContainerContacts = styled.div`
@@ -32,20 +33,23 @@ const DivHeaderContainerContacts = styled.div`
 `
 
 const HeaderWr = styled.header`
-  width: 100%;
-  position: absolute;
+  width: 96%;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-  border-radius: 20px;
+  
   background-color: white;
-
+  
   display: flex;
   flex-direction: row;
   gap:4.67vw;
   align-items: center;
   justify-content: center;
 
+  
+  border-radius: 1vw;
+  margin: 2vw;
 `
 
 export default Header;

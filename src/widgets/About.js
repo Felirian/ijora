@@ -77,6 +77,7 @@ const Wr = styled.div`
   display: flex;
   flex-direction: column;
   gap: 6.77vw;
+  margin-top: 10vw;
 `
 const TextBlock = styled.section`
   display: flex;

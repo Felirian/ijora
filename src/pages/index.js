@@ -19,7 +19,7 @@ const Index = () => {
       <Header/>
 
       <About/>
-      {/*<Filters/>*/}
+      <Filters/>
       <Contact/>
       <Map/>
 
@@ -32,6 +32,7 @@ const Index = () => {
 const Wrapper = styled.div`
   width: 100%;
   padding: 0 8% ;
+  position: relative;
 `
 
 export default Index;

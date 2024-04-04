@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const H1 = styled.h1`
   font-family: 'Benzin';
+  font-size: 3.65vw;
 `
 export const H2 = styled.h2`
   font-family: 'Benzin', sans-serif;

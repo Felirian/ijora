@@ -33,6 +33,9 @@ const ApartCardWr = styled.div`
     width: 45%;
   }
 `
+const Rooms = styled.div`
+  
+`
 const Image = styled.img`
   width: 100%;
   height: auto;
