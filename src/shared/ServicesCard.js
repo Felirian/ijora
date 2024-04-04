@@ -1,6 +1,7 @@
 import React from 'react';
 import {H4, P} from "../app/TextTags";
 import styled from "styled-components";
+import {BREAKPOINTS} from "../app/variables";
 
 const ServicesCard = ({img, name, text}) => {
   return (
@@ -19,6 +20,10 @@ const CardWr = styled.div`
   height: 51.04vw;
   overflow: hidden;
   position: relative;
+  @media ${BREAKPOINTS.mobile} {
+    width: 85%;
+    height: auto;
+  }
 `
 const TextWr = styled.div`
   display: flex;
@@ -28,6 +33,12 @@ const TextWr = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
+  h4 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3vw;
+  }
 `
 const Image = styled.img`
   width: 100%;
