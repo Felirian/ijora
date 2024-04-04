@@ -7,8 +7,8 @@ const Title = () => {
   console.log(img);
   return (
     <BannerWr>
-      <Image src={img.src} alt={''}/>
-      <P>Новый элитный жилой комплекс, расположенный в 20 минутах от города </P>
+      <Image src={img.src} alt={''} data-aos='fade-right'/>
+      <P data-aos='flip-left' data-aos-duration="1000">Новый элитный жилой комплекс, расположенный в 20 минутах от города </P>
     </BannerWr>
   );
 };

@@ -5,16 +5,16 @@ import { P, H1 } from '../app/TextTags';
 const Footer = () => {
   return (
     <FooterWr id={'footer'}>
-      <DivHeaderContainerServices>
+      <DivHeaderContainerServices data-aos='fade-right'>
         <a href="#about"><P>О ЖК</P></a>
         <a href="#serv"><P>Услуги</P></a>
         <a href="#filters"><P>Подбор жилья</P></a>
         <a href="#footer"><P>Контакты</P></a>
       </DivHeaderContainerServices>
 
-      <H1>IJORA</H1>
+      <H1 data-aos='fade-up'>IJORA</H1>
 
-      <DivHeaderContainerContacts>
+      <DivHeaderContainerContacts data-aos='fade-left'>
         <P>Санкт-Петербург, ул.Большая Морская,18, Россия, 191186</P>
         <P>88121112233</P>
         <P>info@izhora.ru</P>
